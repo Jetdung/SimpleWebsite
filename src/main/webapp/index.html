@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <script src="js/index.js"></script>
+    <title>简易旅游系统</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul>
+                <li><a href="oneday.jsp">一日游</a></li>
+                <li><a href="twoday.jsp">二日游</a></li>
+                <li><a href="#">暑假特惠</a></li>
+                <li><a href="#">周末特惠</a></li>
+                <li><a href="#">定制游</a></li>
+
+            </ul>
+        </div>
+        <div id="content">
+            <div id="left">
+                <div id="user">
+                    <h3>用户登录</h3>
+                    <div id="login">
+                        <form action="/login" method="post" target="_self">
+                            <table  width="180" height="120">
+                                <tr>
+                                    <td width="50">用户名：</td><td><input id="username" name="user" type="text" size="13" onblur="displayuser()"/></td>
+                                </tr>
+                                <tr>
+                                    <td id="u" colspan="2">　</td>
+                                </tr>
+                                <tr>
+                                    <td>密　码：</td><td><input id="password" name="pwd" type="password" size="13" onblur="displaypwd()"/></td>
+                                </tr>
+                                <tr>
+                                    <td id="p" colspan="2">　</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right"><input class="btn" id="btn1" type="submit" value="登录" onclick="return judge();"/></td>
+                                    <td style="text-align:center"><input class="btn" id="btn2" type="button" value="注册" onclick="window.location.href='register.html'"/></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <h2>杭州</h2>
+                <p>&nbsp;&nbsp;杭州人文古迹众多，西湖及其周边有大量的自然及人文景观遗迹，其中主要代表性的独特文化有西域文<br/>化、传统文化、良渚文化、丝绸文化等翁话，遗迹流传下来的许多故事传说成为杭州文化代表。</p>
+                <ul>
+                    <li><img src="images/_1.jpg" width="190" height="80"/><br/><a href="#">冬日的白堤</a></li>
+                    <li><img src="images/_2.jpg" width="190" height="80"/><br/><a href="#">山水一体千岛湖</a></li>
+                    <li><img src="images/_3.jpg" width="190" height="80"/><br/><a href="#">千年古诗灵隐</a></li>
+                    <li><img src="images/_4.jpg" width="190" height="80"/><br/><a href="#">白雪飘落的山路</a></li>
+                    <li><img src="images/_5.jpg" width="190" height="80"/><br/><a href="#">春天的西溪</a></li>
+                    <li><img src="images/_6.jpg" width="190" height="80"/><br/><a href="#">穿越千年的大运河</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div id="footer">
+            <p>经营许可证编号：京ICP0706888号 京ICP备09000888号</p>
+        </div>
+    </div>
+</body>
+</html>

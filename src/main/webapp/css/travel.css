@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 宋体;
+    font-size: 14px;
+}
+#main{
+    margin:0 auto;
+    width:800px;
+    height:600px;
+}
+#header{
+    width:800px;
+    height:200px;
+    background:url("../images/autumn.jpg") no-repeat;
+    overflow: hidden;
+}
+#header ul{
+    margin-top:168px;
+    margin-left:100px;
+    list-style: none;
+}
+#header ul li{
+    float:left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left:50px;
+}
+#header ul li a:link,#header ul li a:visited{
+    text-decoration:none;
+    color:white;
+}
+#header ul li a:hover{
+    text-decoration:underline;
+}
+#content{
+    width:800px;
+    height:360px;
+}
+#left{
+    width:200px;
+    height:360px;
+    float:left;
+    background:#EEEEEE;
+}
+#user{
+    width:192px;
+    height:230px;
+    background:#FFFFFF url("../images/title_bg.jpg") no-repeat;
+    margin-top:50px;
+    margin-left:4px;
+}
+#user h3{
+    color:white;
+    line-height:25px;
+    text-align: center;
+}
+#login{
+    margin-top:50px;
+    margin-left:40px;
+    font-size:12px;
+}
+#right{
+    width:600px;
+    height:360px;
+    float:left;
+    background:#CBE4F0;
+    position: relative;
+}
+#right ul{
+    list-style: none;
+    margin-left:35px;
+    overflow: hidden;
+}
+#right ul li{
+    float:left;
+    margin-top:15px;
+    margin-left:20px;
+    text-align: center;
+}
+#right ul li img{
+    width:150px;
+    height:100px;
+}
+#right p{
+    margin-top:20px;
+    margin-left:45px;
+}
+#pri{
+    margin-left:200px;
+}
+#st{
+    width:35px;
+}
+.control{
+    width:20px;
+}
+#table{
+    margin-top: 5px;
+    text-align: center;
+}
+#table th{
+    height:30px;
+}
+#table tr td{
+    height:125px;
+}
+#table a:link,a:visited{
+    text-decoration: none;
+    color:black;
+}
+#table a:hover{
+    text-decoration: underline;
+}
+#detail{
+    text-align: left;
+    text-indent:2em;
+}
+#paging{
+    position: absolute;
+    left:26%;
+    top:80%;
+    text-align: center;
+}
+#barcon{
+    font-size:12px;
+    font-weight: bold;
+}
+#bottom{
+    position: absolute;
+    left:0%;
+    top:90%;
+    width:500px;
+    text-align: left;
+}
+#st{
+    position: absolute;
+    left:100%;
+}
+#table tr td img{
+    width:150px;
+    height:100px;
+}
+#footer{
+    width:800px;
+    height:40px;
+    background:#CCCCCC;
+    line-height:40px;
+    font-weight: bold;
+}
+#footer p{
+    width:350px;
+    margin:0 auto;
+}

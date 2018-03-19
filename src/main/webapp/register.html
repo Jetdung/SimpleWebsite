@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/register.css" rel="stylesheet" type="text/css"/>
+    <script src="js/register.js"></script>
+    <title>注册</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul>
+                <li><a href="oneday.jsp">一日游</a></li>
+                <li><a href="twoday.jsp">二日游</a></li>
+                <li><a href="#">暑假特惠</a></li>
+                <li><a href="#">周末特惠</a></li>
+                <li><a href="#">定制游</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="center">
+                <h2>用户注册</h2>
+                <div id="reg">
+                	<form action="/register" method="post" target="_self">
+                        <table width="230" height="180" style="text-align: right">
+                            <tr>
+                                <td>用　　户：</td><td><input id="username" name="user" type="text" size="15" onblur="displayuser()"/></td>
+                            </tr>
+                            <tr>
+                                <td id="u" colspan="2" style="text-align: left">　</td>
+                            </tr>
+                            <tr>
+                                <td>密　　码：</td><td><input id="password" name="pwd" type="password" size="15" onblur="displaypwd()"/></td>
+                            </tr>
+                            <tr>
+                                <td id="p" colspan="2" style="text-align: left">　</td>
+                            </tr>
+                            <tr>
+                                <td>确认密码：</td><td><input id="confirm" type="password" size="15" onblur="displayconfirm()"/></td>
+                            </tr>
+                            <tr>
+                                <td id="c" colspan="2" style="text-align: left">　</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left"><input type="button" value="返回" onclick="window.location.href='index.html'"/></td>
+                                <td><input id="btn" type="submit" value="注册" onclick="return judge();"/></td>
+                            </tr>
+                        </table>
+			        </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>经营许可证编号：京ICP0706888号 京ICP备09000888号</p>
+        </div>
+    </div>
+</body>
+</html>

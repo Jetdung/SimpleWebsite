@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 宋体;
+    font-size: 14px;
+}
+#main{
+    margin:0 auto;
+    width:800px;
+    height:600px;
+}
+#header{
+    width:800px;
+    height:200px;
+    background:url("../images/autumn.jpg") no-repeat;
+    overflow: hidden;
+}
+#header ul{
+    margin-top:168px;
+    margin-left:100px;
+    list-style: none;
+}
+#header ul li{
+    float:left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left:50px;
+}
+#header ul li a:link,#header ul li a:visited{
+    text-decoration:none;
+    color:white;
+}
+#header ul li a:hover{
+    text-decoration:underline;
+}
+#content{
+    width:800px;
+    height:360px;
+    background:#CBE4F0;
+}
+#center{
+    float:left;
+    width:400px;
+    height:300px;
+    background:#EEEEEE;
+    margin-top:15px;
+    margin-left:200px;
+
+}
+#center h2{
+    text-align: center;
+    color:green;
+    margin-top:40px;
+}
+#reg{
+	margin-top:20px;
+	margin-left:80px;
+}
+#footer{
+    width:800px;
+    height:40px;
+    background:#CCCCCC;
+    line-height:40px;
+    font-weight: bold;
+}
+#footer p{
+    width:350px;
+    margin:0 auto;
+}
