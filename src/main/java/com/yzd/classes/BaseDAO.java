@@ -1,4 +1,4 @@
-package com.yzd.classes;
+﻿package com.yzd.classes;
 
 import java.sql.*;
 
@@ -9,7 +9,7 @@ public class BaseDAO {
     int count;
     public static Connection getConn() throws Exception {                   //连接数据库
         Class.forName("com.mysql.jdbc.Driver");
-        String url="jdbc:mysql://localhost:3306/system";
+        String url="jdbc:mysql://localhost:3306/system?useSSL=false";
         String username="root";
         String password="123456";
         Connection conn= DriverManager.getConnection(url,username,password);
@@ -17,8 +17,7 @@ public class BaseDAO {
     }
     public ResultSet exeQuery(String sql,Object[] values){                    //查询数据库
         try{
-            BaseDAO db=new BaseDAO();
-            con=db.getConn();
+            con=getConn();
             ps=con.prepareStatement(sql);
             for(int i=0;i<values.length;i++){
                 ps.setObject(i+1, values[i]);
@@ -32,8 +31,7 @@ public class BaseDAO {
     }
     public int exeUpdate(String sql,Object[] values){                         //更新数据库
         try{
-            BaseDAO db=new BaseDAO();
-            con=db.getConn();
+            con=getConn();
             ps=con.prepareStatement(sql);
             for(int i=0;i<values.length;i++){
                 ps.setObject(i+1, values[i]);
@@ -47,9 +45,9 @@ public class BaseDAO {
     }
     public void closeAll(){
         try {
+			rs.close();
+			ps.close();
             con.close();
-            ps.close();
-            rs.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
